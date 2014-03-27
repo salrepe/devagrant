@@ -10,11 +10,6 @@
     "recipe[rbenv::user]"
   ],
   "override_attributes": {
-    "postgresql": {
-      "password": {
-        "postgres": ""
-      }
-    },
     "rbenv": {
       "user_installs": [
         {
