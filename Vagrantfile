@@ -6,6 +6,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.berkshelf.enabled = true
   config.berkshelf.berksfile_path = File.join(File.dirname(__FILE__), 'Berksfile')
   config.omnibus.chef_version = :latest
+  config.ssh.forward_agent = true
 
   config.vm.provider :virtualbox do |vb|
     vb.customize ['modifyvm', :id, '--memory', '2048']
@@ -22,6 +23,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.add_recipe 'rbenv::vagrant'
     chef.add_recipe 'vim'
     chef.add_recipe 'postgresql'
+    chef.add_recipe 'zsh'
+    chef.add_recipe 'ack'
 
     chef.json = {
       rbenv: {
