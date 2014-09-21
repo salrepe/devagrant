@@ -1,7 +1,7 @@
 devagrant
 =========
 
-A vagrant box with a minimum setup 
+A vagrant box with a minimum setup
 
 ## Requirements
 
@@ -11,9 +11,8 @@ A vagrant box with a minimum setup
 ## Starting the machine
 
 ```zsh
-$ git clone git@github.com:salrepe/devagrant.git
+$ git clone https://github.com/salrepe/devagrant.git
 $ cd devagrant
-$ vagrant plugin install vagrant-berkshelf
 $ vagrant up
 $ vagrant provision
 $ vagrant ssh

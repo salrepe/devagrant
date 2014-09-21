@@ -1,54 +1,43 @@
-{
-  "sources": {
-    "postgresql": {
-      "locked_version": "3.3.4"
-    },
-    "ruby_build": {
-      "locked_version": "0.8.0"
-    },
-    "rbenv": {
-      "locked_version": "0.7.3",
-      "git": "git://github.com/fnichol/chef-rbenv.git",
-      "ref": "9afb4e5da2e6212504a12de3bbbd410cd96100f6"
-    },
-    "vim": {
-      "locked_version": "1.1.2"
-    },
-    "git": {
-      "locked_version": "2.10.0"
-    },
-    "apt": {
-      "locked_version": "2.3.4"
-    },
-    "build-essential": {
-      "locked_version": "1.4.2"
-    },
-    "openssl": {
-      "locked_version": "1.1.0"
-    },
-    "java": {
-      "locked_version": "1.14.0"
-    },
-    "windows": {
-      "locked_version": "1.11.0"
-    },
-    "chef_handler": {
-      "locked_version": "1.1.5"
-    },
-    "aws": {
-      "locked_version": "0.101.6"
-    },
-    "dmg": {
-      "locked_version": "2.2.0"
-    },
-    "runit": {
-      "locked_version": "1.5.8"
-    },
-    "yum": {
-      "locked_version": "3.1.2"
-    },
-    "yum-epel": {
-      "locked_version": "0.3.4"
-    }
-  }
-}
+DEPENDENCIES
+  git
+  postgresql
+  rbenv
+    git: git://github.com/fnichol/chef-rbenv.git
+    revision: 0a3018634bafe58ad21c6ee271af015220e444b9
+  ruby_build
+  vim
+
+GRAPH
+  apt (2.6.0)
+  build-essential (2.0.6)
+  chef-sugar (2.2.0)
+  chef_handler (1.1.6)
+  dmg (2.2.0)
+  git (4.0.2)
+    build-essential (>= 0.0.0)
+    dmg (>= 0.0.0)
+    runit (>= 1.0.0)
+    windows (>= 0.0.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
+  java (1.28.0)
+  openssl (2.0.0)
+    chef-sugar (>= 0.0.0)
+  postgresql (3.4.2)
+    apt (>= 1.9.0)
+    build-essential (>= 0.0.0)
+    openssl (>= 0.0.0)
+  rbenv (0.7.3)
+    java (> 1.4.0)
+    ruby_build (>= 0.0.0)
+  ruby_build (0.8.0)
+  runit (1.5.10)
+    build-essential (>= 0.0.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
+  vim (1.1.2)
+  windows (1.34.2)
+    chef_handler (>= 0.0.0)
+  yum (3.3.2)
+  yum-epel (0.5.1)
+    yum (~> 3.0)

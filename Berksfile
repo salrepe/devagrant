@@ -1,4 +1,4 @@
-site :opscode
+source 'https://supermarket.getchef.com'
 
 cookbook 'postgresql'
 cookbook 'ruby_build'
